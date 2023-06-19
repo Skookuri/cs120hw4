@@ -1,25 +1,25 @@
 	body {
-    	background-color: #3D3B8E;
-        color: #E072A4;
+    	background-color: #839788;
+        color: #D8D2E1;
         font-size: 30px;
     }
     
     a {
-    	color: #E072A4;
+    	color: #D8D2E1;
         text-decoration: none;
     } 
     
     li {
         padding: 20px;
         border-radius: 67px;
-		background: linear-gradient(145deg, #413f98, #373580);
-		box-shadow:  5px 5px 10px #29285f,
-             -5px -5px 10px #514ebd;
+		background: linear-gradient(145deg, #8ca292, #76887a);
+		box-shadow:  5px 5px 10px #546157,
+             -5px -5px 10px #b2cdb9;
     }
     
     
     li:hover {
-		background: linear-gradient(145deg, #373580, #413f98);
+		background: linear-gradient(145deg, #76887a, #8ca292);
         cursor: pointer;
     }
     
@@ -29,7 +29,6 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         padding: 0px;
-        
     }
     
     ul li {
@@ -39,7 +38,7 @@
     
     div {
     	position: relative;
-        border: 5px solid #E072A4;
+        border: 5px solid #D8D2E1;
         width: 600px; 
         text-align: center; 
         margin: auto;
