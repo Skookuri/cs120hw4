@@ -1,0 +1,96 @@
+	body {
+    	background-color: #3D3B8E;
+        color: #E072A4;
+        font-size: 30px;
+    }
+    
+    a {
+    	color: #E072A4;
+        text-decoration: none;
+    } 
+    
+    li {
+        padding: 20px;
+        border-radius: 67px;
+		background: linear-gradient(145deg, #413f98, #373580);
+		box-shadow:  5px 5px 10px #29285f,
+             -5px -5px 10px #514ebd;
+    }
+    
+    
+    li:hover {
+		background: linear-gradient(145deg, #373580, #413f98);
+        cursor: pointer;
+    }
+    
+    ul {
+		list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0px;
+        
+    }
+    
+    ul li {
+    	margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    
+    div {
+    	position: relative;
+        border: 5px solid #E072A4;
+        width: 600px; 
+        text-align: center; 
+        margin: auto;
+        padding: 10px;
+    }
+    
+    h1 a:hover {
+    	color: #fff;
+        transition: 0.3s;
+    }
+    
+    h2 {
+    	margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    @media only screen and (max-width: 445px) {
+        ul {
+        	justify-content: center;
+        }
+	}
+    
+    
+    @media only screen and (min-width: 445px) and (max-width: 640px) {
+  		div {
+    		width: 400px;
+  		}
+	}
+    
+    @media only screen and (max-width: 445px) {
+  		div {
+        	width: 70vw;
+        }
+	}
+    
+    @media only screen and (min-width: 165px) and (max-width: 240px) {
+        a {
+    		font-size: 10vw;
+  		}
+        
+        
+	}
+    
+    @media only screen and (max-width: 165px) {
+        a {
+    		font-size: 14vw;
+  		}
+	}
+    
+    @media only screen and (max-width: 240px) {
+        li {
+        	padding: 10vw;
+        }
+	}
