@@ -28,8 +28,8 @@
 	<p class="total"></p>
 </div>
 <br>
-<div>
-	<button class="reset" style="display: none; width: fit-content;">Start Over</button>
+<div id="resetDiv" style="display: none;">
+	<button class="reset" style="width: fit-content;">Start Over</button>
 </div>
 <script>
 let items = [
@@ -79,7 +79,7 @@ $(document).ready(function() {
             $(".total").text("Total: $" + totalPrice.toFixed(2));
             
             if (totalPrice > 0) {
-                $(".reset").show();
+                $("#resetDiv").show();
             }
         } else {
             alert("Item not selected.");
@@ -97,7 +97,7 @@ $(document).ready(function() {
     });
     $(".addedItems").empty();
     $(".total").text("Total: $0.00");
-    $(".reset").hide();
+    $("#resetDiv").hide();
   });
 });
 </script>
