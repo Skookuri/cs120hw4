@@ -93,3 +93,41 @@
         	padding: 10vw;
         }
 	}
+
+	button {
+    	font-size: 20px;
+        border: none;
+        color: #D8D2E1;
+        outline: none;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 67px;
+		background: linear-gradient(145deg, #8ca292, #76887a);
+		box-shadow:  5px 5px 10px #546157,
+             -5px -5px 10px #b2cdb9;
+    }
+    
+    button:hover {
+    	background: linear-gradient(145deg, #76887a, #8ca292);
+        cursor: pointer;
+    }
+    
+    input {
+    	width: 100px;
+    }
+    
+    @media only screen and (min-width: 143px) and (max-width: 500px) {
+    	input {
+        	width: 30vw;
+        }
+        
+        button {
+        	font-size: 7vw;
+        }
+    }
+    
+    @media only screen and (max-width: 143px) {
+    	input {
+        	width: 100%;
+        }
+    }
