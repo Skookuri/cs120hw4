@@ -112,9 +112,28 @@
         cursor: pointer;
     }
     
+    select {
+    	background-color: #839788;
+        color: #D8D2E1;
+        border-color: #D8D2E1;
+    }
+    
+    select, input {
+        font-size: 17px;
+    }
+    
     input {
     	width: 100px;
+        backround-color: #D8D2E1;
+        color: #839788;
+        font-weight: bold;
     }
+    
+    input[type=number] {
+    	width: 40px;
+    }
+    
+
     
     @media only screen and (min-width: 143px) and (max-width: 500px) {
     	input {
