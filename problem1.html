@@ -17,7 +17,7 @@ let SentenceArray = [];
 let sentence = prompt("Write a sentence!");
 
 if (sentence === null || sentence === "") {
-  alert("Invalid input");
+  document.getElementById("display").innerHTML = "Invalid input";
 } else {
   SentenceArray = sentence.split(" ");
   let wordnum = SentenceArray.length;
