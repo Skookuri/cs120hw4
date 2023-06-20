@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://skookuri.github.io/cs120hw4/stylesheet.css">
+<title>Problem 3</title>
+<style>
+	button {
+    	font-size: 20px;
+        border: none;
+        color: #D8D2E1;
+        outline: none;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 67px;
+		background: linear-gradient(145deg, #8ca292, #76887a);
+		box-shadow:  5px 5px 10px #546157,
+             -5px -5px 10px #b2cdb9;
+    }
+    
+    button:hover {
+    	background: linear-gradient(145deg, #76887a, #8ca292);
+        cursor: pointer;
+    }
+    
+    input {
+    	width: 100px;
+    }
+    
+    @media only screen and (min-width: 143px) and (max-width: 500px) {
+    	input {
+        	width: 30vw;
+        }
+        
+        button {
+        	font-size: 8vw;
+        }
+    }
+    
+    @media only screen and (max-width: 143px) {
+    	input {
+        	width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+<h1><a href="https://skookuri.github.io/cs120hw4">⏪ back</a></h1>
+<h2>Problem 3</h2>
+<div>
+<form action="javascript:void(0);">
+	<input type="text" id="name" name="name"><br><br>
+    <button id="hello" onclick="speak('Hello')">Hello</button>
+    <button id="goodbye" onclick="speak('Good Bye')">Good Bye</button>
+    <button id="greetings" onclick="speak('Greetings')">Greetings</button>
+</form>
+</div>
+<script>
+function speak(prefix) {
+	let finalName = $("#name").val();
+	let alertthing = prefix + " " + finalName;
+	alert(alertthing);
+}
+
+//This Works Without All the Extra Stuff So I Made This First But I Also Made The Other Function As Instructed Above
+/*$(document).ready(function(){
+  $("button").click(function(){
+  	let buttonContent = $(this).text();
+    let finalName = $("#name").val();
+    let alertthing = buttonContent + " " + finalName;
+    alert(alertthing);
+  });
+});*/
+</script>
+</body>
+</html>
